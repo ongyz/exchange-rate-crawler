@@ -1,18 +1,8 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 import urllib.request
 from lxml import etree
 import pandas as pd
 import calendar
 import datetime
-
-
-# In[2]:
-
 
 def parseDate(date, dateResult):
     # the address of the exchange rate site page
@@ -37,15 +27,6 @@ def parseDate(date, dateResult):
         dateResult.append(country_result)
     
     return dateResult
-
-        
-        
-        
-        
-
-
-# In[4]:
-
 
 # conver to DataFrame
 # we would like to parse data all the way till 2013-01-01
